@@ -14,18 +14,25 @@ def profile():
 @app.route('/login', methods=['POST', 'GET'])
 def login():
 	if request.method == 'POST':
-		pass
-		# if not valid info:
-		# 	pass
-		# else:
-		# 	if ID matches respective type_:
-		# 		return render_template('admin.html')
-		# 	elif ID matches respective type_:
-		# 		return render_template('doctor.html')
-		# 	elif ID matches respective type_:
-		# 		return render_template('nurse.html')
-		# 	elif ID matches respective type_:
-		# 		return render_template('secretary.html')
+		conn = db.connect()
+		username = str(request.form['username'])
+		password = str(request.form['password'])
+		cursor = conn.cursor()
+		cursor.execute("SELECT username FROM admins WHERE username =? AND password = ?", (username, password))
+		user = cursor.fetchone()
+		if len(user) is 1:
+			print(user)
+			#error = 'Invald username and or password'
+		else:
+			pass
+			# if :
+			# 	return render_template('admin.html')
+			# elif ID matches respective type_:
+			# 	return render_template('doctor.html')
+			# elif ID matches respective type_:
+			# 	return render_template('nurse.html')
+			# elif ID matches respective type_:
+			# 	return render_template('secretary.html')
 	return render_template('login.html')
 
 @app.route('/logout')
