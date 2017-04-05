@@ -1,0 +1,11 @@
+# ----------------------
+# Flask
+# ----------------------
+flask
+Flask-WTF
+flask-mysql
+
+# ----------------------
+# Production Server
+# ----------------------
+gunicorn

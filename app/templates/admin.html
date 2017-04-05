@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<h1 class="page-header">Welcome Admin admin_name</h1>
+<div class="option-btn">
+	<ul>
+		<li><a href="{{ url_for('addDoc') }}">Add a Doctor</a></li>
+		<li><a href="{{ url_for('addNur') }}">Add a Nurse</a></li>
+		<li><a href="{{ url_for('addSec') }}">Add a Secetery</a></li>
+	</ul>
+</div>
+{% endblock %}

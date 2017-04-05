@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<h1 class="page-header">Create Patient</h1>
+
+<form>
+	<input type="text" name="first_name" autocomplete="off" placeholder="First Name">
+
+	<input type="text" name="last_name" autocomplete="off" placeholder="Last Name">
+
+	<label>Address</label>
+	<textarea name="address" placeholder="Please state address"></textarea>
+
+	<ul>
+		<label for="gender">Please Select Gender</label>
+		<li>
+			<input type="radio" id="male" name="Gender" value="male">
+			<label for="male">Male</label>
+
+			<div class="check"><div class="inside"></div></div>
+		</li>
+
+		<li>
+			<input type="radio" id="female" name="Gender" value="female">
+			<label for="female">Female</label>
+
+			<div class="check"><div class="inside"></div></div>
+		</li>
+	</ul>
+
+	<label>Phone Number</label>
+	<input type="text" name="phone" autocomplete="off">
+
+	<label>Age</label>
+	<input type="number" name="age" autocomplete="off">
+
+	<label>Email</label>
+	<input type="email" name="email" autocomplete="off" placeholder="Email">
+
+
+</form>
+
+{% endblock %}
