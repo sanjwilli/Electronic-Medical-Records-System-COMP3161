@@ -21,7 +21,7 @@ def login():
 		cursor.execute("SELECT username FROM admins WHERE username =? AND password = ?", (username, password))
 		user = cursor.fetchone()
 		if len(user) is 1:
-			print(user)
+			print("USERNAME IS " + str(user))
 			#error = 'Invald username and or password'
 		else:
 			pass
