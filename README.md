@@ -62,7 +62,7 @@ Now you open a new command line terminal and start Mysql. When Mysql is open ple
 ```
 mysql> source /path/to/file/Electronic-Medical-Records-System-COMP3161/hospital_final3.sql
 ```
-Your database has been created with only one (1) data and that is the administration Information. Where you should be able to login to the as admin with the folling
+Your database has been created with only one (1) data and that is the administration Information. Where you should be able to login to the as admin with the following
 
 ```
 username: admin0001
