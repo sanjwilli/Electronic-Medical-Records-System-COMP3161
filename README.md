@@ -51,7 +51,7 @@ $ pip install flask
 
 ## Running the System
 
-Open the command line and find the file. If there is no requirements.txt file then skip the line below.
+Open the command line and find the file. If there is no requirements.txt file then skip the second line below.
 
 ```
 $ source venv/bin/activate
